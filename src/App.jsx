@@ -7,7 +7,7 @@ function App() {
       <div className='flex min-h-screen items-center justify-center bg-white'>
         {/* <LoginPages /> */}
 
-        <Awalpages/>
+        {/* <Awalpages/> */}
       </div>
     </>
   )

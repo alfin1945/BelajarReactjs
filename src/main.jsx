@@ -4,8 +4,10 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import LoginPages from './assets/Pages/LoginPages'
 import RegisterPages from './assets/Pages/RegisterPages'
-import CardLayouts from './assets/components/Layouts/CardLayouts'
 import Awalpages from './assets/Pages/Awalpages'
+import PageMembaca from './assets/Pages/PageMembaca'
+import PageCard from './assets/Pages/PageCard'
+import PageMenulis from './assets/Pages/PageMenulis'
 
 const router = createBrowserRouter([
   {
@@ -22,7 +24,31 @@ const router = createBrowserRouter([
   },
   {
     path:"/Belajar",
-    element: <CardLayouts />
+    element: <PageCard />
+  },
+  {
+    path:"/Membaca",
+    element: <PageMembaca />
+  },
+  {
+    path:"/Menghitung",
+    element: <div>Mari menghitung</div>
+  },
+  {
+    path:"/Menulis",
+    element: <PageMenulis />
+  },
+  {
+    path:"/Percakapan",
+    element: <div>Mari Ngobrol</div>
+  },
+  {
+    path:"/Inggris",
+    element: <div>Mari Belajar Bahasa Inggris</div>
+  },
+  {
+    path:"/Tentan",
+    element: <div>Tentang aplikasi</div>
   },
 ])
 
