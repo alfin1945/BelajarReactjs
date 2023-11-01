@@ -9,7 +9,7 @@ function MenulisLayouts(props) {
     return (
         <div>
             <Navbar merk="Belajar Menulis" />
-            <div className='mt-32'>
+            <div className='mt-28'>
                 <h1 className='text-4xl text-black mb-5 text-center font-semibold font-serif'>{title}</h1>
                 <Menulis />
             </div>
