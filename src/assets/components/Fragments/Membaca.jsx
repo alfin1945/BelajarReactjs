@@ -9,7 +9,7 @@ function Membaca() {
     return (
         <div>
             <div className='grid grid-cols-4 gap-3 mx-40'>
-                <Link to="/Membaca" className='transition duration-500 hover:scale-105'>
+                <Link to="/Huruf" className='transition duration-500 hover:scale-105'>
                     <Card lern="Mengenal Huruf" logo={icon} bg="bg-[#e29578]" shadow ="shadow-[#e29578]" position="mx-12" />
                 </Link>
                 <Link to="/Membaca" className='transition duration-500 hover:scale-105'>

@@ -8,12 +8,12 @@ function Navbar(props) {
     const [open, setOpen] = useState(false)
 
     return (
-        <nav className='bg-transparent fixed w-full top-0  border-b-2 border-b-slate-300 shadow'>
+        <nav className='bg-white fixed w-full z-20 top-0  border-b-2 border-b-slate-300 shadow'>
             <div className='flex items-center px-24 justify-between'>
                 <div>
                     <Link to='/'>
                         <div className=''>
-                            <h1 className=' py-2 font-semibold text-lg'>
+                            <h1 className='py-2 font-semibold text-lg'>
                                 {merk}
                             </h1>
                         </div>

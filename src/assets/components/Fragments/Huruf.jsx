@@ -1,9 +1,9 @@
 import React from 'react'
-import { useState} from 'react'
+import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'react-feather'
 
 
-function Coursel({ children: slides}) {
+function Huruf({ children: slides }) {
 
     const [curr, setCurr] = useState(0)
 
@@ -29,7 +29,11 @@ function Coursel({ children: slides}) {
             <div className='absolute bottom-4 right-0 left-0'>
                 <div className='flex items-center justify-center gap-2'>
                     {slides.map((s, i) => (
-                        <div key={i} className={`transition-all w-2 h-2 rounded-full bg-white ${curr === i ? "" : "bg-opacity-50"}`} ></div>
+                        <div key={i}  >
+                            <button onClick={() => (
+                                setCurr(i)
+                            )} className={`transition-all w-2 h-2 rounded-full bg-white ${curr === i ? "" : "bg-opacity-50"}`}></button>
+                        </div>
                     ))}
                 </div>
             </div>
@@ -38,4 +42,4 @@ function Coursel({ children: slides}) {
     )
 }
 
-export default Coursel
+export default Huruf

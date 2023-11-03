@@ -8,6 +8,7 @@ import Awalpages from './assets/Pages/Awalpages'
 import PageMembaca from './assets/Pages/PageMembaca'
 import PageCard from './assets/Pages/PageCard'
 import PageMenulis from './assets/Pages/PageMenulis'
+import PageHuruf from './assets/Pages/PageHuruf'
 
 const router = createBrowserRouter([
   {
@@ -47,8 +48,8 @@ const router = createBrowserRouter([
     element: <div>Mari Belajar Bahasa Inggris</div>
   },
   {
-    path:"/Tentan",
-    element: <div>Tentang aplikasi</div>
+    path:"/Huruf",
+    element: <PageHuruf/>
   },
 ])
 
